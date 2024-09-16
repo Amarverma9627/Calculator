@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +9,41 @@
 </head>
 
 <body>
-   
+
     <div class="main">
-    <div class="box" id="res">
+        <div class="box" id="res">
 
+        </div>
+        <div class="btn">
+            <button onclick="allclear()" class="acc">Ac</button>
+            <button onclick="singleclear()" class="cc">Clear</button>
+            <button class="btnn9" onclick="task('%')">%</button>
+            <button class="btnn9" onclick="task('/')">/</button>
+            <button class="btnn1" onclick="task(1)">1 </button>
+            <button class="btnn1" onclick="task(2)">2</button>
+            <button class="btnn1" onclick="task(3)">3</button>
+            <button class="btnn9" onclick="task('+')">+</button><br>
+            <button class="btnn4" onclick="task(4)">4</button>
+            <button class="btnn4" onclick="task(5)">5</button>
+            <button class="btnn4" onclick="task(6)">6</button>
+            <button class="btnn9" onclick="task('-')">-</button><br>
+            <button class="btnn7" onclick="task(7)">7</button>
+            <button class="btnn7" onclick="task(8)">8</button>
+            <button class="btnn7" onclick="task(9)">9</button>
+            <button class="btnn9" onclick="task('*')">*</button><br>
+            <button class="btnn7" onclick="task(0)">0</button>
+            <button class="eq" style="height: 45px; width:150px;" onclick="Answer()">=</button>
+
+            <button class="btnn9" onclick="task('00')">00 </button><br>
+
+            <p>Calculator</p>
+
+
+        </div>
+       
     </div>
-    <div class="btn">
-        <button onclick="allclear()" class="acc">Ac</button>
-        <button onclick="singleclear()" class="cc">Clear</button>
-        <button class="btnn9" onclick="task('%')">%</button>
-        <button class="btnn9" onclick="task('/')">/</button>
-        <button class="btnn1" onclick="task(1)">1 </button>
-        <button class="btnn1" onclick="task(2)">2</button>
-        <button class="btnn1" onclick="task(3)">3</button>
-        <button class="btnn9" onclick="task('+')">+</button><br>
-        <button class="btnn4" onclick="task(4)">4</button>
-        <button class="btnn4" onclick="task(5)">5</button>
-        <button class="btnn4"onclick="task(6)">6</button>
-        <button class="btnn9" onclick="task('-')">-</button><br>
-        <button class="btnn7" onclick="task(7)">7</button>
-        <button class="btnn7" onclick="task(8)">8</button>
-        <button class="btnn7" onclick="task(9)">9</button>
-        <button class="btnn9" onclick="task('*')">*</button><br>
-        <button class="btnn7" onclick="task(0)">0</button>
-        <button class="eq" style="height: 45px; width:150px;" onclick="Answer()">=</button>
-        
-        <button class="btnn9" onclick="task('00')">00 </button><br>
-        
-        <p>Calculator</p>
-
-
-    </div>
-    <script>
-        let arr=[];
-        function task(val){
-            arr.push(val);
-           let box= document.getElementById('res');
-           box.innerHTML=arr.join('');
-           
-        }
-        function Answer(){
-           let   str = arr.join('');
-           let result = eval(str); 
-           demo=document.getElementById('res')
-           demo.innerHTML=result;
-        }
-        function allclear(){
-            arr=[];
-            let demo=document.getElementById('res');
-            demo.innerHTML=arr.join('');
-        }
-        function singleclear(){
-            arr.pop();
-            let demo = document.getElementById('res');
-            demo.innerHTML=arr.join('');
-
-        }
-           
-    
-    </script>
-    </div>
+    <script src="cal.js"></script>
 
 </body>
+
 </html>
