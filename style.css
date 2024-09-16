@@ -1,0 +1,80 @@
+
+.box{
+    height: 65px;
+    width: 320px;
+    border: 2px solid ;
+    background-color: rgb(195, 224, 125);
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 25px;
+    box-shadow: 0 0 20px white;
+    font-size: 25px;
+    
+}
+.btn{
+    margin-left: 27px
+}
+.btn button{
+    margin-top: 5px;
+    height: 48px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(247, 247, 250);
+    font-weight: bold;
+    
+}
+.btn button:hover{
+    font-size: 22px;
+}
+.acc{
+    background-color: red;
+    color: white;
+}
+.btnn1:hover{
+    background-color:aqua;
+   
+}
+.btnn4:hover{
+    background-color:plum;
+}
+.btnn7:hover{
+    background-color:yellow;
+}
+.btnn9:hover{
+   
+    background-color: rgb(113, 202, 113);
+}
+.main{
+    border: 1px solid black;
+    height: 460px;
+    width: 370px;
+    margin-left: 320px;
+    margin-top: 100px;
+    box-shadow: 0 0 50px rgb(240, 237, 237) , 0  0 25px rgb(25, 231, 238);
+    border-radius: 10px;
+    background-color:rgb(56, 51, 51);
+}
+.eq{
+    background-color:orange ;
+}
+.cc{
+    background-color: rgb(119, 209, 36);
+    
+}
+.btn p{
+    padding-left: 115px;
+    
+    margin-top: 4px;
+    color:white;
+    font-size: 18px;
+    text-shadow: 0 0 20px white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn{
+    color: white;
+}
+
